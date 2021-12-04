@@ -441,7 +441,7 @@ if(isset($_POST['docsub1']))
                     <th scope="col">Gender</th>
                     <th scope="col">Email</th>
                     <th scope="col">Contact</th>
-                    <th scope="col">Doctor Name</th>
+                    <th scope="col">Hospital Name</th>
                     <th scope="col">Consultancy Fees</th>
                     <th scope="col">Appointment Date</th>
                     <th scope="col">Appointment Time</th>

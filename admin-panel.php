@@ -200,6 +200,18 @@ function get_specs(){
   background-color: #3c50c1;
   border-color: #3c50c1;
 }
+.pay{
+  background-color: white;
+  border: 5px solid blue;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 30px;
+  cursor: pointer;
+  background: white;
+}
   </style>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -433,8 +445,12 @@ function get_specs(){
                   </div><br><br>
 
                   <div class="col-md-4">
-                    <input type="submit" name="app-submit" value="Create new entry" class="btn btn-primary" id="inputbtn">
+                    <div clas="wrap">
+                      <a href="payment.php" class="pay">
+                        Proceed to Payment
+                     </a>
                   </div>
+                   </div>
                   <div class="col-md-8"></div>                  
                 </div>
               </form>
@@ -490,7 +506,7 @@ function get_specs(){
 
                     if(($row['userStatus']==1) && ($row['doctorStatus']==0))  
                     {
-                      echo "Cancelled by Doctor";
+                      echo "Cancelled by Hospital";
                     }
                         ?></td>
 
