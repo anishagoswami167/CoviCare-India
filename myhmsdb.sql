@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Mar 16, 2020 at 02:34 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Dec 05, 2021 at 09:45 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -67,18 +66,15 @@ CREATE TABLE `appointmenttb` (
 --
 
 INSERT INTO `appointmenttb` (`pid`, `ID`, `fname`, `lname`, `gender`, `email`, `contact`, `doctor`, `docFees`, `appdate`, `apptime`, `userStatus`, `doctorStatus`) VALUES
-(4, 1, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-14', '10:00:00', 1, 0),
-(4, 2, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '10:00:00', 0, 1),
-(4, 3, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Amit', 1000, '2020-02-19', '03:00:00', 0, 1),
-(11, 4, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'ashok', 500, '2020-02-29', '20:00:00', 1, 1),
-(4, 5, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '12:00:00', 1, 1),
-(4, 6, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-26', '15:00:00', 0, 1),
-(2, 8, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'Ganesh', 550, '2020-03-21', '10:00:00', 1, 1),
-(5, 9, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'Ganesh', 550, '2020-03-19', '20:00:00', 1, 0),
-(4, 10, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '0000-00-00', '14:00:00', 1, 0),
-(4, 11, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-03-27', '15:00:00', 1, 1),
-(9, 12, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Kumar', 800, '2020-03-26', '12:00:00', 1, 1),
-(9, 13, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Tiwary', 450, '2020-03-26', '14:00:00', 1, 1);
+(1, 15, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'LPS Hospital', 800, '2021-12-11', '14:00:00', 0, 1),
+(1, 16, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'Bhimrao Ambedkar District Hosp', 800, '2021-12-14', '12:00:00', 1, 1),
+(1, 17, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'AIIMS,Delhi', 800, '2021-12-12', '08:00:00', 1, 1),
+(2, 18, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'Fortis,Delhi', 800, '2021-12-13', '12:00:00', 1, 1),
+(2, 19, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'AIIMS,Delhi', 800, '2021-12-06', '14:00:00', 1, 1),
+(14, 20, 'Anisha', 'Goswami', 'Female', 'anishagoswami167@gmail.com', '8447277607', 'Apollo', 800, '2021-12-10', '10:00:00', 0, 1),
+(14, 21, 'Anisha', 'Goswami', 'Female', 'anishagoswami167@gmail.com', '8447277607', 'Fortis Hospital', 800, '2021-12-08', '10:00:00', 1, 1),
+(14, 22, 'Anisha', 'Goswami', 'Female', 'anishagoswami167@gmail.com', '8447277607', 'Apollo', 800, '2021-12-17', '16:00:00', 1, 0),
+(14, 23, 'Anisha', 'Goswami', 'Female', 'anishagoswami167@gmail.com', '8447277607', 'Bhimrao Ambedkar Hospital', 800, '2021-12-15', '10:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -98,15 +94,12 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`name`, `email`, `contact`, `message`) VALUES
-('Anu', 'anu@gmail.com', '7896677554', 'Hey Admin'),
 (' Viki', 'viki@gmail.com', '9899778865', 'Good Job, Pal'),
 ('Ananya', 'ananya@gmail.com', '9997888879', 'How can I reach you?'),
 ('Aakash', 'aakash@gmail.com', '8788979967', 'Love your site'),
-('Mani', 'mani@gmail.com', '8977768978', 'Want some coffee?'),
 ('Karthick', 'karthi@gmail.com', '9898989898', 'Good service'),
-('Abbis', 'abbis@gmail.com', '8979776868', 'Love your service'),
-('Asiq', 'asiq@gmail.com', '9087897564', 'Love your service. Thank you!'),
-('Jane', 'jane@gmail.com', '7869869757', 'I love your service!');
+('Jane', 'jane@gmail.com', '7869869757', 'I love your service!'),
+('St Stephen Hospital', 'stephen@gmail.com', '8860192169', 'Tis Hazari  , Delhi 110054 ');
 
 -- --------------------------------------------------------
 
@@ -127,14 +120,17 @@ CREATE TABLE `doctb` (
 --
 
 INSERT INTO `doctb` (`username`, `password`, `email`, `spec`, `docFees`) VALUES
-('ashok', 'ashok123', 'ashok@gmail.com', 'General', 500),
-('arun', 'arun123', 'arun@gmail.com', 'Cardiologist', 600),
-('Dinesh', 'dinesh123', 'dinesh@gmail.com', 'General', 700),
-('Ganesh', 'ganesh123', 'ganesh@gmail.com', 'Pediatrician', 550),
-('Kumar', 'kumar123', 'kumar@gmail.com', 'Pediatrician', 800),
-('Amit', 'amit123', 'amit@gmail.com', 'Cardiologist', 1000),
-('Abbis', 'abbis123', 'abbis@gmail.com', 'Neurologist', 1500),
-('Tiwary', 'tiwary123', 'tiwary@gmail.com', 'Pediatrician', 450);
+('Apollo', 'apollo123', 'apollo@gmail.com', 'Delhi', 800),
+('AIIMS Delhi', 'aiimsd123', 'aiimsd@gmail.com', 'Delhi', 800),
+('GTB Hospital', 'gtb123', 'gtb@gmail.com', 'Delhi', 800),
+('Fortis Hospital', 'fortis123', 'fortis@gmail.com', 'Delhi', 800),
+('Rajiv Gandhi Super Specialist Hospital', 'rjss123', 'rjss@gmail.com', 'Delhi', 800),
+('AIIMS Nagpur', 'aiimsn123', 'aiimsn@gmail.com', 'Maharashtra', 800),
+('Kasturba Hospital ', 'kasturba123', 'kasturba@gmail.com', 'Maharashtra', 800),
+('Bhimrao Ambedkar Hospital', 'ambedkar123', 'ambedkar@gmail.com', 'MP', 800),
+('Lal Bahadur Shastri Hospital', 'lbs123', 'lbs@gmail.com', 'UP', 800),
+('District Hospital', 'district123', 'district@gmail.com', 'UP', 800),
+('Instance five test Hospital', 'five123', 'five@gmail.com', 'Punjab', 800);
 
 -- --------------------------------------------------------
 
@@ -168,7 +164,10 @@ INSERT INTO `patreg` (`pid`, `fname`, `lname`, `gender`, `email`, `contact`, `pa
 (8, 'Kenny', 'Sebastian', 'Male', 'kenny@gmail.com', '9809879868', 'kenny123', 'kenny123'),
 (9, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'william123', 'william123'),
 (10, 'Peter', 'Norvig', 'Male', 'peter@gmail.com', '9609362815', 'peter123', 'peter123'),
-(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'shraddha123', 'shraddha123');
+(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'shraddha123', 'shraddha123'),
+(14, 'Anisha', 'Goswami', 'Female', 'anishagoswami167@gmail.com', '8447277607', 'anisha', 'anisha'),
+(15, 'charu', 'giri', 'Female', 'charu@gmail.com', '9999988888', 'charu123', 'charu123'),
+(16, 'Manav', 'Goswami', 'Male', 'manav@gmail.com', '8447277607', 'manav123', 'manav123');
 
 -- --------------------------------------------------------
 
@@ -194,10 +193,7 @@ CREATE TABLE `prestb` (
 --
 
 INSERT INTO `prestb` (`doctor`, `pid`, `ID`, `fname`, `lname`, `appdate`, `apptime`, `disease`, `allergy`, `prescription`) VALUES
-('Dinesh', 4, 11, 'Kishan', 'Lal', '2020-03-27', '15:00:00', 'Cough', 'Nothing', 'Just take a teaspoon of Benadryl every night'),
-('Ganesh', 2, 8, 'Alia', 'Bhatt', '2020-03-21', '10:00:00', 'Severe Fever', 'Nothing', 'Take bed rest'),
-('Kumar', 9, 12, 'William', 'Blake', '2020-03-26', '12:00:00', 'Sever fever', 'nothing', 'Paracetamol -> 1 every morning and night'),
-('Tiwary', 9, 13, 'William', 'Blake', '2020-03-26', '14:00:00', 'Cough', 'Skin dryness', 'Intake fruits with more water content');
+('Fortis Hospital', 14, 21, 'Anisha', 'Goswami', '2021-12-08', '10:00:00', 'RNA Specific to SARS-COV-2 Detected.\r\n', 'RNA Specific to SARS-COV-2 not Detected.\r\n', '\r\nThis could be due to low viral load in the sample. A repeat sample is recommended for confirmation.');
 
 --
 -- Indexes for dumped tables
@@ -223,13 +219,13 @@ ALTER TABLE `patreg`
 -- AUTO_INCREMENT for table `appointmenttb`
 --
 ALTER TABLE `appointmenttb`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `patreg`
 --
 ALTER TABLE `patreg`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
